@@ -141,7 +141,7 @@ with open('customer_data.pickle', 'rb') as fh:
    [X_train_scaled,y_train,X_test_scaled,y_test,customers_1,customer_df_cleaned,scaler_age,enc,one_hot_enc,le]=pickle.load(fh)
 x_single_prediction = np.argmax(ai_brain.predict(X_test_scaled[1:2,:]), axis=1)
 print(x_single_prediction)
-print(le.inverse_transform(x_single_prediction))
+print(le.inverse_transform(x_single_prediction)) 
 ```
 ## Dataset Information
 ![Screenshot 2023-09-18 205057](https://github.com/sarveshjustin/nn-classification/assets/113497481/211207f0-703a-40e2-b5b0-f3e22681be54)
